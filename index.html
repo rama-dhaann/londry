@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleana Laundry | Laundry Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">CLEANA<span>.</span></div>
+    <a href="#layanan" class="nav-btn">Layanan Kami</a>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <span class="tag">LAUNDRY SERVICE</span>
+        <h1>Pakaian Bersih,<br>Hari Lebih Nyaman.</h1>
+        <p>
+            Solusi laundry praktis, bersih, dan terpercaya
+            untuk kebutuhan sehari-hari.
+        </p>
+        <a href="#layanan" class="btn">Lihat Layanan</a>
+    </div>
+</section>
+
+<section class="services" id="layanan">
+    <div class="section-heading">
+        <span>LAYANAN KAMI</span>
+        <h2>Pilih Layanan Laundry</h2>
+        <p>Berbagai pilihan untuk kebutuhan pakaianmu.</p>
+    </div>
+
+    <div class="service-grid">
+        <div class="card">
+            <div class="service-icon">👕</div>
+            <h3>Cuci Reguler</h3>
+            <p>Cuci dan lipat pakaian sehari-hari.</p>
+            <h4>Rp7.000 / kg</h4>
+        </div>
+
+        <div class="card">
+            <div class="service-icon">✨</div>
+            <h3>Cuci Express</h3>
+            <p>Layanan cepat untuk kebutuhan mendesak.</p>
+            <h4>Rp12.000 / kg</h4>
+        </div>
+
+        <div class="card">
+            <div class="service-icon">👔</div>
+            <h3>Setrika</h3>
+            <p>Pakaian rapi dan siap digunakan.</p>
+            <h4>Rp5.000 / kg</h4>
+        </div>
+    </div>
+</section>
+
+<section class="calculator">
+    <div class="calculator-box">
+        <span>ESTIMASI BIAYA</span>
+        <h2>Hitung Harga Laundry</h2>
+
+        <label for="service">Pilih layanan</label>
+        <select id="service">
+            <option value="7000">Cuci Reguler</option>
+            <option value="12000">Cuci Express</option>
+            <option value="5000">Setrika</option>
+        </select>
+
+        <label for="weight">Berat pakaian (kg)</label>
+        <input type="number" id="weight" min="1" placeholder="Contoh: 3">
+
+        <div class="result">
+            <span>Estimasi total:</span>
+            <h2 id="total">Rp0</h2>
+        </div>
+
+        <button class="btn" onclick="calculate()">
+            Hitung Sekarang
+        </button>
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Siap Menikmati Pakaian Bersih?</h2>
+    <p>Pesan layanan laundry sekarang melalui WhatsApp.</p>
+    <button class="btn" onclick="orderLaundry()">
+        Pesan Sekarang
+    </button>
+</section>
+
+<footer>
+    <h3>CLEANA LAUNDRY</h3>
+    <p>Clean Clothes, Happy Life.</p>
+    <p class="copyright">
+        © 2026 Cleana Laundry | Website by WAYMARK
+    </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

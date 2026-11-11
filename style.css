@@ -1,0 +1,230 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f8fbff;
+    color: #172b46;
+}
+
+header {
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #2999df;
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: #258bd0;
+    font-weight: bold;
+}
+
+.hero {
+    min-height: 430px;
+    padding: 90px 8%;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(90deg, #e6f5ff 45%, #e6f5ffbb),
+        url("https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?w=1200");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 480px;
+}
+
+.tag, .section-heading span,
+.calculator-box > span {
+    color: #2699dc;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 43px;
+    margin: 18px 0;
+    line-height: 1.2;
+}
+
+.hero p {
+    color: #60748a;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #258fd1;
+    color: white;
+    padding: 14px 23px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.services {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin: 12px 0;
+    font-size: 28px;
+}
+
+.section-heading p {
+    color: #8291a3;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 14px;
+    box-shadow: 0 5px 25px #17395c0d;
+    text-align: left;
+}
+
+.service-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #8291a3;
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 45px;
+}
+
+.card h4 {
+    color: #258fd1;
+    margin-top: 18px;
+}
+
+.calculator {
+    padding: 60px 8%;
+    background: #eaf6ff;
+}
+
+.calculator-box {
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px #17395c0d;
+}
+
+.calculator-box h2 {
+    margin: 12px 0 25px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+select, input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d9e4ee;
+    border-radius: 8px;
+    outline: none;
+    background: white;
+}
+
+.result {
+    padding: 20px 0;
+}
+
+.result span {
+    color: #8291a3;
+}
+
+.result h2 {
+    color: #258fd1;
+    margin-top: 8px;
+}
+
+.contact {
+    text-align: center;
+    padding: 65px 8%;
+}
+
+.contact p {
+    margin: 15px 0 25px;
+    color: #8291a3;
+}
+
+footer {
+    background: #172b46;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+footer p {
+    margin-top: 10px;
+    color: #b8c9dc;
+}
+
+.copyright {
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+@media(max-width: 650px) {
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 75px 7%;
+    }
+
+    .services {
+        padding: 50px 7%;
+    }
+}
